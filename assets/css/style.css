@@ -1,0 +1,117 @@
+a {
+  margin: 0px;
+  padding: 0px;
+}
+a:hover {
+  color: #ff6600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #060a0f;
+}
+
+p {
+  color: #494949;
+}
+
+.tSlow, nav ul li a:after, nav ul li a:before, nav ul li a, nav ul .link-active a:after, nav ul, nav .logo img, nav, a {
+  transition: all 0.5s ease-in-out;
+}
+
+.pad_100 {
+  padding: 100px 0px;
+}
+
+.center {
+  text-align: center;
+  margin: 0px auto;
+}
+
+nav {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 0px;
+  position: fixed;
+  border-bottom: 1px solid transparent;
+  z-index: 100;
+}
+nav:hover {
+  background-color: #FFF;
+  padding: 15px 0px;
+  border: 1px solid rgba(6, 10, 15, 0.1);
+}
+nav:hover .logo img {
+  width: 30%;
+}
+nav:hover ul {
+  margin-top: 8px;
+}
+nav:hover ul li a {
+  color: rgba(73, 73, 73, 0.5);
+}
+nav .logo img {
+  width: 40%;
+}
+nav ul {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  text-align: right;
+}
+nav ul .link-active a {
+  color: #060a0f !important;
+}
+nav ul .link-active a:after {
+  width: 100%;
+  background-color: #060a0f;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  height: 1px;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 0%;
+  background-color: red;
+  height: 1px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #060a0f;
+}
+nav ul li a:hover:before {
+  width: 0%;
+  background-color: #060a0f;
+}
+nav ul li a:hover:after {
+  width: 100%;
+  background-color: #060a0f;
+}
+
+#slider {
+  backface-visibility: hidden;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important;
+  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important;
+}
+
+#whats img {
+  width: 110px;
+}/*# sourceMappingURL=style.css.map */

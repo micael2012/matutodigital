@@ -1,0 +1,113 @@
+$base: #060a0f
+$sec: #494949
+$outline: #ff6600
+$text: transparentize($sec,.5)
+a
+    margin: 0px
+    padding: 0px
+    @extend.tSlow
+    &:hover
+        color: $outline
+h1,h2,h3,h4,h5,h6
+    color: $base
+
+p
+    color: $sec
+.tSlow
+    -webkit-transition: all 0.5s ease-in-out
+    -o-transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out
+
+.pad_100
+    padding: 100px 0px
+.center
+    text-align: center
+    margin: 0px auto
+
+nav
+    width: 100%
+    background-color: transparent
+    padding: 10px 0px
+    position: fixed
+    border-bottom: 1px solid transparent
+    z-index: 100
+    @extend.tSlow
+    &:hover
+        background-color: #FFF
+        padding: 15px 0px
+        border: 1px solid transparentize($base, .9 )
+        .logo
+            img
+                width: 30%
+        ul
+            margin-top: 8px
+            li
+                a
+                    color:$text 
+    .logo
+        // width: 25%
+        img
+            width: 40%
+            @extend.tSlow
+    ul
+        margin: 0px
+        margin-top: 20px
+        padding: 0px
+        text-align: right
+        @extend.tSlow
+        .link-active
+            a
+                color: $base !important
+                &:after
+                    width: 100%
+                    background-color: $base
+                    @extend.tSlow
+                    
+        li
+            display: inline-block
+            padding: 0px 10px
+            a
+                position: relative
+                text-decoration: none
+                font-size: 16px
+                text-transform: uppercase
+                color: transparentize(white,0.3 )
+                @extend.tSlow
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    background-color: transparent
+                    height: 1px
+                    @extend.tSlow
+                &:after
+                    content: ""
+                    position: absolute
+                    top: 100%
+                    left: 0px
+                    width: 0%
+                    background-color: red
+                    height: 1px
+                    @extend.tSlow
+                &:hover
+                    // background-color: purple
+                    text-decoration: none
+                    color: $base
+                    &:before
+                        width: 0%
+                        background-color: $base
+                    &:after
+                        width: 100%
+                        background-color: $base
+
+//config slider
+#slider
+    backface-visibility: hidden
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important
+    -o-clip-path:      polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important
+    clip-path:         polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important
+
+    
+#whats
+    img
+        width: 110px
