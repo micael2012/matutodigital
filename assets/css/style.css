@@ -29,17 +29,28 @@ p {
 
 nav {
   width: 100%;
-  background-color: #ffcccc;
+  background-color: transparent;
   padding: 10px 0px;
   position: fixed;
   border-bottom: 1px solid transparent;
   z-index: 100;
 }
-nav .logo {
-  width: 35%;
+nav:hover {
+  background-color: #FFF;
+  padding: 15px 0px;
+  border: 1px solid rgba(6, 10, 15, 0.1);
+}
+nav:hover .logo img {
+  width: 30%;
+}
+nav:hover ul {
+  margin-top: 8px;
+}
+nav:hover ul li a {
+  color: rgba(73, 73, 73, 0.5);
 }
 nav .logo img {
-  width: 100%;
+  width: 40%;
 }
 nav ul {
   margin: 0px;
@@ -62,7 +73,8 @@ nav ul li a {
   position: relative;
   text-decoration: none;
   font-size: 16px;
-  color: rgba(73, 73, 73, 0.5);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
 }
 nav ul li a:before {
   content: "";
@@ -95,7 +107,11 @@ nav ul li a:hover:after {
 
 #slider {
   backface-visibility: hidden;
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
-  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
-  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important;
+  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%) !important;
+}
+
+#whats img {
+  width: 110px;
 }/*# sourceMappingURL=style.css.map */
